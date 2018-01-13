@@ -1,0 +1,453 @@
+@import '_var.scss';
+@import '_mixins.scss';
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+	/* sass/style.scss - line  */
+	*,body{
+		font: {
+			family: $lato; // $lato, $roboto, $opensans
+			size: $size-padrao;
+			weight: 700;
+		}
+		padding:0;
+		margin:0;
+	}
+
+	/* 
+	sass/style.scss - line  
+	Parágrafo
+	*/
+	p{
+		font: {
+			size: $size-em - 0.4;
+			weight: 400;
+		}
+	}
+
+	/* 
+	sass/style.scss - line 
+	Estilo para não esquecer de colocar o Alt na Imagem  - Lembre do ALT 
+	*/
+	img[alt=""],
+	img:not([alt]){
+		border: 3px dashed #FF0000;
+	}
+
+	/* 
+	sass/style.scss - line 
+	Container
+	*/
+	.#{$content}{
+		width: 100%;
+		height: auto;
+		padding: 16px 16px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin: 5%;
+	}
+
+	/* 
+	sass/style.scss - line 
+	Card 
+	*/
+	.#{$card}{
+		width: 22%;
+		height: auto;
+		@include box-shadow(0 4px 8px 0 rgba(0,0,0,0.2));
+		flex: 0 1 auto;
+		flex-grow: 0;
+		flex-shrink: 1;
+		flex-basis: auto;
+		margin: 5%;
+	}
+
+	/* 
+	sass/style.scss - line 
+	Card Hover e Focus 
+	*/
+	.#{$card}{
+		&:hover,&:focus{
+			@include box-shadow(0 8px 16px 0 rgba(0,0,0,0.2));
+		}
+	}
+
+	/* 
+	sass/style.scss - line 
+	Card-IMG 
+	*/
+	.#{$card}-img{
+		width: 100%;
+		vertical-align: $center;
+		@include box-shadow(0 4px 4px 0 rgba(0,0,0,0.2));
+	}
+
+	/* 
+	sass/style.scss - line 
+	Card-title 
+	*/
+	.#{$card}-title{
+		font: {
+			size: $size-em + 0.5;
+			weight: 900;
+		}
+
+		margin: {
+			top: 2%;
+			bottom: 2%;
+		}
+
+		text: {
+			align: $center;
+		}
+	}
+
+	/*
+	sass/style.scss - line 
+	Card-Subtitle
+	*/
+	.#{$card}-subtitle{
+		font: {
+			size: $size-em - 0.25;
+			weight: 400;
+		}
+
+		text: {
+			align: $center;
+		}
+
+		margin: {
+			top: 2%;
+			bottom: 2%;
+		}
+
+		color: $color-subtitle-card;
+	}
+
+	/* 
+	sass/style.scss - line 
+	Card-text 
+	*/
+	.#{$card}-text{
+		font: {
+			size: $size-em - 0.4;
+			weight: 400;
+		}
+
+		margin: {
+			top: 3%;
+			left: 4%;
+			right: 4%;
+			bottom: 5%;
+		}
+
+		text: {
+			align: $justify;
+		}
+	}
+}
+
+@media screen and (max-device-width: 320px){
+	/* sass/style.scss - line  */
+	*,body{
+		font: {
+			family: $lato; // $lato, $roboto, $opensans
+			size: $size-padrao;
+			weight: 700;
+		}
+		padding:0;
+		margin:0;
+	}
+
+	/* 
+	sass/style.scss - line  
+	Parágrafo
+	*/
+	p{
+		font: {
+			size: $size-em - 0.4;
+			weight: 400;
+		}
+	}
+
+	/* 
+	sass/style.scss - line 
+	Estilo para não esquecer de colocar o Alt na Imagem  - Lembre do ALT 
+	*/
+	img[alt=""],
+	img:not([alt]){
+		border: 3px dashed #FF0000;
+	}
+
+	/* 
+	sass/style.scss - line 
+	Container
+	*/
+	.#{$content}{
+		width: 100%;
+		height: auto;
+		padding: 16px 16px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: $center;
+		align-items: flex-start;
+		margin: 2%;
+	}
+
+	/* 
+	sass/style.scss - line 
+	Card 
+	*/
+	.#{$card}{
+		width: 32%;
+		height: auto;
+		@include box-shadow(0 4px 8px 0 rgba(0,0,0,0.2));
+		flex: 0 1 auto;
+		flex-grow: 0;
+		flex-shrink: 1;
+		flex-basis: auto;
+		margin: 6% 8% 0 4%;
+		vertical-align: $center;
+		order: 5;
+	}
+
+	/* 
+	sass/style.scss - line 
+	Card Hover e Focus 
+	*/
+	.#{$card}{
+		&:hover,&:focus{
+			@include box-shadow(0 8px 16px 0 rgba(0,0,0,0.2));
+		}
+	}
+
+	/* 
+	sass/style.scss - line 
+	Card-IMG 
+	*/
+	.#{$card}-img{
+		width: 100%;
+		vertical-align: $center;
+		@include box-shadow(0 4px 4px 0 rgba(0,0,0,0.2));
+	}
+
+	/* 
+	sass/style.scss - line 
+	Card-title 
+	*/
+	.#{$card}-title{
+		font: {
+			size: $size-em + 0.5;
+			weight: 900;
+		}
+
+		margin: {
+			top: 2%;
+			bottom: 2%;
+		}
+
+		text: {
+			align: $center;
+		}
+	}
+
+	/*
+	sass/style.scss - line 
+	Card-Subtitle
+	*/
+	.#{$card}-subtitle{
+		font: {
+			size: $size-em - 0.25;
+			weight: 400;
+		}
+
+		text: {
+			align: $center;
+		}
+
+		margin: {
+			top: 2%;
+			bottom: 2%;
+		}
+
+		color: $color-subtitle-card;
+	}
+
+	/* 
+	sass/style.scss - line 
+	Card-text 
+	*/
+	.#{$card}-text{
+		font: {
+			size: $size-em - 0.35;
+			weight: 400;
+		}
+
+		margin: {
+			top: 3%;
+			left: 4%;
+			right: 4%;
+			bottom: 5%;
+		}
+
+		text: {
+			align: $justify;
+		}
+	}
+}
+
+@media screen and (max-device-width: 425px) {
+	/* sass/style.scss - line  */
+	*,body{
+		font: {
+			family: $lato; // $lato, $roboto, $opensans
+			size: $size-padrao;
+			weight: 700;
+		}
+		padding:0;
+		margin:0;
+	}
+
+	/* 
+	sass/style.scss - line  
+	Parágrafo
+	*/
+	p{
+		font: {
+			size: $size-em - 0.4;
+			weight: 400;
+		}
+	}
+
+	/* 
+	sass/style.scss - line 
+	Estilo para não esquecer de colocar o Alt na Imagem  - Lembre do ALT 
+	*/
+	img[alt=""],
+	img:not([alt]){
+		border: 3px dashed #FF0000;
+	}
+
+	/* 
+	sass/style.scss - line 
+	Container
+	*/
+	.#{$content}{
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: $center;
+		align-items: flex-start;
+		margin: 0 0 0 0;
+		padding: {
+			top: 2%;
+			bottom: 4%;
+		}
+	}
+
+	/* 
+	sass/style.scss - line 
+	Card 
+	*/
+	.#{$card}{
+		width: 30%;
+		height: auto;
+		@include box-shadow(0 4px 8px 0 rgba(0,0,0,0.2));
+		flex: 0 1 auto;
+		flex-grow: 0;
+		flex-shrink: 1;
+		flex-basis: auto;
+		margin: 3% 3% 1% 1%;
+		vertical-align: $center;
+	}
+
+	/* 
+	sass/style.scss - line 
+	Card Hover e Focus 
+	*/
+	.#{$card}{
+		&:hover,&:focus{
+			@include box-shadow(0 8px 16px 0 rgba(0,0,0,0.2));
+		}
+	}
+
+	/* 
+	sass/style.scss - line 
+	Card-IMG 
+	*/
+	.#{$card}-img{
+		width: 100%;
+		vertical-align: $center;
+		@include box-shadow(0 4px 4px 0 rgba(0,0,0,0.2));
+	}
+
+	/* 
+	sass/style.scss - line 
+	Card-title 
+	*/
+	.#{$card}-title{
+		font: {
+			size: $size-em + 0.75;
+			weight: 900;
+		}
+
+		margin: {
+			top: 2%;
+			bottom: 2%;
+		}
+
+		text: {
+			align: $center;
+		}
+	}
+
+	/*
+	sass/style.scss - line 
+	Card-Subtitle
+	*/
+	.#{$card}-subtitle{
+		font: {
+			size: $size-em - 0.20;
+			weight: 400;
+		}
+
+		text: {
+			align: $center;
+		}
+
+		margin: {
+			top: 2%;
+			bottom: 2%;
+		}
+
+		color: $color-subtitle-card;
+	}
+
+	/* 
+	sass/style.scss - line 
+	Card-text 
+	*/
+	.#{$card}-text{
+		font: {
+			size: $size-em - 0.15;
+			weight: 400;
+		}
+
+		margin: {
+			top: 3%;
+			left: 4%;
+			right: 4%;
+			bottom: 5%;
+		}
+
+		text: {
+			align: $justify;
+		}
+	}
+}

@@ -1,0 +1,8 @@
+@import '_var.scss';
+
+
+@mixin box-shadow($sombras...){
+  -webkit-box-shadow: $sombras;
+    -moz-box-shadow: $sombras;
+      box-shadow: $sombras;
+}

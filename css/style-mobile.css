@@ -1,0 +1,380 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  /* sass/style.scss - line  */
+  *, body {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* 
+  sass/style.scss - line  
+  Parágrafo
+  */
+  p {
+    font-size: 0.85em;
+    font-weight: 400;
+  }
+
+  /* 
+  sass/style.scss - line 
+  Estilo para não esquecer de colocar o Alt na Imagem  - Lembre do ALT 
+  */
+  img[alt=""],
+  img:not([alt]) {
+    border: 3px dashed #FF0000;
+  }
+
+  /* 
+  sass/style.scss - line 
+  Container
+  */
+  .content {
+    width: 100%;
+    height: auto;
+    padding: 16px 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 5%;
+  }
+
+  /* 
+  sass/style.scss - line 
+  Card 
+  */
+  .card {
+    width: 22%;
+    height: auto;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    flex: 0 1 auto;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    margin: 5%;
+  }
+
+  /* 
+  sass/style.scss - line 
+  Card Hover e Focus 
+  */
+  .card:hover, .card:focus {
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* 
+  sass/style.scss - line 
+  Card-IMG 
+  */
+  .card-img {
+    width: 100%;
+    vertical-align: center;
+    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* 
+  sass/style.scss - line 
+  Card-title 
+  */
+  .card-title {
+    font-size: 1.75em;
+    font-weight: 900;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+  }
+
+  /*
+  sass/style.scss - line 
+  Card-Subtitle
+  */
+  .card-subtitle {
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: #969696;
+  }
+
+  /* 
+  sass/style.scss - line 
+  Card-text 
+  */
+  .card-text {
+    font-size: 0.85em;
+    font-weight: 400;
+    margin-top: 3%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 5%;
+    text-align: justify;
+  }
+}
+@media screen and (max-device-width: 320px) {
+  /* sass/style.scss - line  */
+  *, body {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* 
+  sass/style.scss - line  
+  Parágrafo
+  */
+  p {
+    font-size: 0.85em;
+    font-weight: 400;
+  }
+
+  /* 
+  sass/style.scss - line 
+  Estilo para não esquecer de colocar o Alt na Imagem  - Lembre do ALT 
+  */
+  img[alt=""],
+  img:not([alt]) {
+    border: 3px dashed #FF0000;
+  }
+
+  /* 
+  sass/style.scss - line 
+  Container
+  */
+  .content {
+    width: 100%;
+    height: auto;
+    padding: 16px 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2%;
+  }
+
+  /* 
+  sass/style.scss - line 
+  Card 
+  */
+  .card {
+    width: 32%;
+    height: auto;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    flex: 0 1 auto;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    margin: 6% 8% 0 4%;
+    vertical-align: center;
+    order: 5;
+  }
+
+  /* 
+  sass/style.scss - line 
+  Card Hover e Focus 
+  */
+  .card:hover, .card:focus {
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* 
+  sass/style.scss - line 
+  Card-IMG 
+  */
+  .card-img {
+    width: 100%;
+    vertical-align: center;
+    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* 
+  sass/style.scss - line 
+  Card-title 
+  */
+  .card-title {
+    font-size: 1.75em;
+    font-weight: 900;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+  }
+
+  /*
+  sass/style.scss - line 
+  Card-Subtitle
+  */
+  .card-subtitle {
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: #969696;
+  }
+
+  /* 
+  sass/style.scss - line 
+  Card-text 
+  */
+  .card-text {
+    font-size: 0.9em;
+    font-weight: 400;
+    margin-top: 3%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 5%;
+    text-align: justify;
+  }
+}
+@media screen and (max-device-width: 425px) {
+  /* sass/style.scss - line  */
+  *, body {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* 
+  sass/style.scss - line  
+  Parágrafo
+  */
+  p {
+    font-size: 0.85em;
+    font-weight: 400;
+  }
+
+  /* 
+  sass/style.scss - line 
+  Estilo para não esquecer de colocar o Alt na Imagem  - Lembre do ALT 
+  */
+  img[alt=""],
+  img:not([alt]) {
+    border: 3px dashed #FF0000;
+  }
+
+  /* 
+  sass/style.scss - line 
+  Container
+  */
+  .content {
+    width: 100%;
+    height: auto;
+    padding: 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 0 0 0;
+    padding-top: 2%;
+    padding-bottom: 4%;
+  }
+
+  /* 
+  sass/style.scss - line 
+  Card 
+  */
+  .card {
+    width: 30%;
+    height: auto;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    flex: 0 1 auto;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    margin: 3% 3% 1% 1%;
+    vertical-align: center;
+  }
+
+  /* 
+  sass/style.scss - line 
+  Card Hover e Focus 
+  */
+  .card:hover, .card:focus {
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* 
+  sass/style.scss - line 
+  Card-IMG 
+  */
+  .card-img {
+    width: 100%;
+    vertical-align: center;
+    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* 
+  sass/style.scss - line 
+  Card-title 
+  */
+  .card-title {
+    font-size: 2em;
+    font-weight: 900;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+  }
+
+  /*
+  sass/style.scss - line 
+  Card-Subtitle
+  */
+  .card-subtitle {
+    font-size: 1.05em;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: #969696;
+  }
+
+  /* 
+  sass/style.scss - line 
+  Card-text 
+  */
+  .card-text {
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-top: 3%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 5%;
+    text-align: justify;
+  }
+}
+
+/*# sourceMappingURL=style-mobile.css.map */

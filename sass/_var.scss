@@ -1,0 +1,43 @@
+@import '_font.scss';
+
+// Fontes
+$lato: 'Lato', sans-serif; // espessura: 400,700,900
+$roboto: 'Roboto', sans-serif; // espessura: 400,500,700,900
+$opensans: 'Open Sans', sans-serif; // espessura: 400,600,700,800
+
+// Tamanhos de Fontes
+$size-padrao: 20px;
+$size-em: 1.25em;
+$center: center;
+$justify: justify;
+
+
+// Variaveis de Card
+$card: card;
+$color-subtitle-card: #969696;
+$card-padrao: #000000;
+$card-hover: #FF0000; 
+
+// Classes
+$content: content;
+$buttom: buttom;
+
+// flex
+$flex: flex;
+$flex-center: center;
+$flex-start: flex-start;
+$flex-end: flex-end;
+$flex-baseline: baseline;
+$flex-stretch: stretch;
+
+// Colors
+$branco: #FFFFFF;
+$vermelho: #FF0000;
+$vermelho-hover: #ff1919;
+$azul: #428ff4;
+$amarelo: #f4c441;
+$verde: #41f446;
+$preto: #000000;
+
+$pointer: pointer;
+
