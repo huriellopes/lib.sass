@@ -1,4 +1,4 @@
-# Library-SASS
+# Lib.Sass
 
 > Biblioteca desenvolvida em Sass pré-processado em CSS, para ser reutilizado em projetos Web!
 
