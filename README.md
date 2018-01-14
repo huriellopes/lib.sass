@@ -21,7 +21,7 @@ O que está sendo desenvolvido na library
 
 Para instalar a lib, você deverá ter o npm instalado com a versão igual ou superior a 5.0.0, sabendo que deve ter instalado o node para utilizar o npm!
 
-> npm install lib.sass@1.0.0
+> npm install lib.sass@1.0.1
 
 ## Compile Sass
 
