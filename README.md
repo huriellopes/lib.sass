@@ -55,11 +55,11 @@ Para instalar a lib, você deverá ter o npm instalado com a versão igual ou su
 
 ### Card's
 
-![Card](https://drive.google.com/file/d/1esN3ejOqo2vPRUpTjNfRl8ZCXoZaJrcQ/view)
+![Card](http://cdn.lopes.tech/card.JPG)
 
 ### Button's
 
-![Button](https://drive.google.com/file/d/1k8suzEpbExavzXIvyVQ0qgdHncdN8JZo/view)
+![Button](http://cdn.lopes.tech/buttons.JPG)
 
 ## LICENSE
 
