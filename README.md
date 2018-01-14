@@ -21,7 +21,7 @@ O que está sendo desenvolvido na library
 
 Para instalar a lib, você deverá ter o npm instalado com a versão igual ou superior a 5.0.0, sabendo que deve ter instalado o node para utilizar o npm.
 
-> npm install lib.sass@1.0.1
+> npm install lib.sass@1.0.2
 
 ## Compile Sass
 
@@ -55,11 +55,27 @@ Para instalar a lib, você deverá ter o npm instalado com a versão igual ou su
 
 ### Card's
 
-![Card](http://cdn.lopes.tech/card.JPG)
+> Uma sequência de 4 Card's
 
-### Button's
+![Card4](http://cdn.lopes.tech/imagens/card-4.JPG)
 
-![Button](http://cdn.lopes.tech/buttons-novo.JPG)
+> Uma sequência de 3 Card's
+
+![Card3](http://cdn.lopes.tech/imagens/card-3.JPG)
+
+### Botões
+
+> Botões com a tag 'button'
+
+![BotaoButton](http://cdn.lopes.tech/imagens/button-tagButton.JPG)
+
+> Botões com a tag 'a'
+
+![BotaoA](http://cdn.lopes.tech/imagens/button-tagA.JPG)
+
+> Botões Block's
+
+![BotaoBlock](http://cdn.lopes.tech/imagens/button-ButtonBlock.JPG)
 
 ## LICENSE
 

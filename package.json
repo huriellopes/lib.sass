@@ -1,7 +1,7 @@
 {
   "name": "lib.sass",
-  "version": "1.0.1",
-  "description": "> Biblioteca desenvolvida em Sass pré-processado em CSS, para ser reutilizado em projetos Web!",
+  "version": "1.0.2",
+  "description": "Biblioteca em sass, desenvolvimento web!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,7 +23,7 @@
     "email": "huriellopes1996@gmail.com",
     "url": "https://huriellopes.github.io"
   },
-  "engines":{
+  "engines": {
     "node": ">=5.0.0"
   },
   "license": "MIT",
