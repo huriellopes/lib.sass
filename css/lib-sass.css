@@ -71,9 +71,10 @@ img:not([alt]) {
   border-color: #f2f2f2;
   border-left: 9px solid #ced4da;
   border-right: 9px solid #ced4da;
-  -webkit-box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
+  outline: 0;
+  box-shadow: 0 0 0 0.2em rgba(242, 242, 245, 0.8);
+  list-style: none;
+  text-decoration: none;
 }
 
 /* sass/lib-sass.scss - line 83 and 90*/
@@ -91,9 +92,10 @@ img:not([alt]) {
   border-color: #ff0c0c;
   border-left: 9px solid #c40000;
   border-right: 9px solid #c40000;
-  -webkit-box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
+  outline: 0;
+  box-shadow: 0 0 0 0.1em rgba(255, 12, 12, 0.4);
+  list-style: none;
+  text-decoration: none;
 }
 
 /* sass/lib-sass.scss - line 102 and 109 */
@@ -111,9 +113,10 @@ img:not([alt]) {
   border-color: #00c40c;
   border-left: 9px solid #007507;
   border-right: 9px solid #007507;
-  -webkit-box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
+  outline: 0;
+  box-shadow: 0 0 0 0.1em rgba(0, 196, 12, 0.7);
+  list-style: none;
+  text-decoration: none;
 }
 
 /* sass/lib-sass.scss - line 121 and 128 */
@@ -131,9 +134,10 @@ img:not([alt]) {
   border-color: #034fb2;
   border-left: 9px solid #002656;
   border-right: 9px solid #002656;
-  -webkit-box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
+  outline: 0;
+  box-shadow: 0 0 0 0.1em rgba(3, 79, 178, 0.7);
+  list-style: none;
+  text-decoration: none;
 }
 
 /* sass/lib-sass.scss - line 139 */

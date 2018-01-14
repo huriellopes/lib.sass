@@ -31,20 +31,82 @@ $flex-baseline: baseline !default;
 $flex-stretch: stretch !default;
 
 // Colors
-$branco: #FFFFFF !default;
-$gelo-hover: #f2f2f2 !default;
-$border-cinza: #ced4da !default;
-$vermelho: #FF0000 !default;
-$vermelho-hover: #ff0c0c !default;
-$border-vermelho: #c40000 !default;
-$azul: #007bff !default !default;
-$azul-hover: #034fb2 !default;
-$border-azul: #002656 !default;
-$amarelo: #f4c441 !default;
-$verde: #00af0b !default;
-$verde-hover: #00c40c !default;
-$border-verde: #007507 !default;
-$preto: #000000 !default;
+$white:   #FFFFFF !default;
+$gelo:	  #f2f2f2 !default;
+$cinza:   #ced4da !default;
+$blue:    #007bff !default;
+$blue-hover: #034fb2 !default;
+$blue-border: #002656  !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #FF0000 !default;
+$red-light: #ff0c0c !default;
+$red-dark: #c40000  !default;
+$orange:  #fd7e14  !default;
+$yellow:  #ffc107 !default;
+$green:   #00af0b !default;
+$green-hover: #00c40c !default;
+$green-border: #007507 !default;
+$black: #000000 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: () !default;
+$colors: map-merge((
+	"branco": $white,
+	"gelo-hover": $gelo,
+	"border-cinza": $cinza,
+	"vermelho": $red,
+	"vermelho-hover": $red-light,
+	"border-vermelho": $red-dark,
+	"azul": $blue,
+	"azul-hover": $blue-hover,
+	"border-azul": $blue-border,
+	"amarelo": $yellow,
+	"verde": $green,
+	"verde-hover": $green-hover,
+	"border-verde": $green-border,
+	"preto": $black
+), $colors);
+
+
+$branco: $white !default;
+$gelo-hover: $gelo !default;
+$border-cinza: $cinza !default;
+$vermelho: $red !default;
+$vermelho-hover: $red-light !default;
+$border-vermelho: $red-dark !default;
+$azul: $blue !default;
+$azul-hover: $blue-hover !default;
+$border-azul: $blue-border !default;
+$amarelo: $yellow !default;
+$verde: $green !default;
+$verde-hover: $green-hover !default;
+$border-verde: $green-border !default;
+$preto: $black !default;
+
+$tema-colors: () !default;
+$tema-colors: map-merge((
+  "branco":    $branco,
+  "gelo-hover":  $gelo-hover,
+  "border-cinza":    $border-cinza,
+  "vermelho":       $vermelho,
+  "vermelho-hover":    $vermelho-hover,
+  "border-vermelho":     $border-vermelho,
+  "azul":      $azul,
+  "azul-hover":       $azul-hover,
+  "border-azul": $border-azul,
+  "amarelo": $amarelo,
+  "verde": $verde,
+  "verde-hover": $verde-hover,
+  "border-verde": $border-verde,
+  "preto": $preto
+), $tema-colors);
+
+$buttom-focus-width:.3rem !default;
+//$buttom-focus-color: rgba(tema-colors($azul), .25) !default;
+$buttom-focus-box-shadow: 0 0 0 .3em $branco;
 
 // buttom default
 $width-padrao: 100% !default;

@@ -44,14 +44,14 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
-		justify-content: flex-start;
-		align-items: flex-start;
+		justify-content: $flex-center;
+		align-items: $flex-center; // $flex-center, $flex-start, $flex-end, $flex-baseline, $flex-stretch
 		margin: 5%;
 	}
 	
 	/* sass/lib-sass-mobile.scss - line 53 */
 	.#{$buttom}{
-		width: 15%;
+		width: 20%;
 		height: 45px;
 		border: 0 0 0 0;
 		cursor: $pointer;
@@ -64,6 +64,7 @@
 		}
 	
 		border-radius: 9px 9px 9px 9px;
+		border-style: outset;
 
 		flex: 0 1 auto;
 		flex-grow: 0;
@@ -73,10 +74,28 @@
 		text: {
 			align: $center;
 		}
+
+		list: {
+			style: none;
+		}
+
+		text: {
+			decoration: none;
+		}
+
+		line: {
+			height: 2;
+		}
+
+		font: {
+			size: $size-em - 0.3;
+			weight: 400;
+		}
+
 	}
 	
 	/* sass/lib-sass-mobile.scss - line 79 */
-	.#{$buttom}-white{
+	.#{$buttom}-padrao{
 		background: $branco;
 		color: $preto;
 		border-color: $branco;
@@ -90,12 +109,22 @@
 			border-color: $gelo-hover;
 			border-left: 9px solid $border-cinza;
 			border-right: 9px solid $border-cinza;
-			@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+			outline: 0;
+			box-shadow: 0 0 0 .2em rgba(242,242,245, 0.8);
+
+
+			list: {
+				style: none;
+			}
+
+			text: {
+				decoration: none;
+			}
 		}
 	}
 	
 	/* sass/lib-sass-mobile.scss - line 98 */
-	.#{$buttom}-danger{
+	.#{$buttom}-atencao{
 		background: $vermelho;
 		color: $preto;
 		border-color: $vermelho;
@@ -110,6 +139,14 @@
 			border-left: 9px solid $border-vermelho;
 			border-right: 9px solid $border-vermelho;
 			@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+
+			list: {
+				style: none;
+			}
+
+			text: {
+				decoration: none;
+			}
 		}
 	}
 	
@@ -129,6 +166,14 @@
 			border-left: 9px solid $border-verde;
 			border-right: 9px solid $border-verde;
 			@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+
+			list: {
+				style: none;
+			}
+
+			text: {
+				decoration: none;
+			}
 		}
 	}
 	
@@ -148,6 +193,14 @@
 			border-left: 9px solid $border-azul;
 			border-right: 9px solid $border-azul;
 			@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+
+			list: {
+				style: none;
+			}
+
+			text: {
+				decoration: none;
+			}
 		}
 	}
 	
@@ -164,7 +217,7 @@
 	.#{$card}{
 		width: 22%;
 		height: auto;
-		@include box-shadow(0 4px 8px 0 rgba(0,0,0,0.2));
+		@include box-shadow(4px 4px 8px 0 rgba(0,0,0,0.2));
 		flex: 0 1 auto;
 		flex-grow: 0;
 		flex-shrink: 1;
@@ -300,14 +353,14 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: $center;
-		align-items: flex-start;
+		justify-content: $flex-center;
+		align-items: $flex-center; // $flex-center, $flex-start, $flex-end, $flex-baseline, $flex-stretch
 		margin: 2%;
 	}
 	
 	/* sass/lib-sass-mobile.scss - line 309 */
 	.#{$buttom}{
-		width: 15%;
+		width: 20%;
 		height: 45px;
 		border: 0 0 0 0;
 		cursor: $pointer;
@@ -320,6 +373,7 @@
 		}
 	
 		border-radius: 9px 9px 9px 9px;
+		border-style: outset;
 
 		flex: 0 1 auto;
 		flex-grow: 0;
@@ -329,10 +383,27 @@
 		text: {
 			align: $center;
 		}
+
+		list: {
+			style: none;
+		}
+
+		text: {
+			decoration: none;
+		}
+
+		line: {
+			height: 2;
+		}
+
+		font: {
+			size: $size-em - 0.5;
+			weight: 400;
+		}
 	}
 	
 	/* sass/lib-sass-mobile.scss - line 335 */
-	.#{$buttom}-white{
+	.#{$buttom}-padrao{
 		background: $branco;
 		color: $preto;
 		border-color: $branco;
@@ -351,7 +422,7 @@
 	}
 	
 	/* sass/lib-sass-mobile.scss - line 354 */
-	.#{$buttom}-danger{
+	.#{$buttom}-atencao{
 		background: $vermelho;
 		color: $preto;
 		border-color: $vermelho;
@@ -575,8 +646,8 @@
 	
 	/* sass/lib-sass-mobile.scss - line 577 */
 	.#{$buttom}{
-		width: 15%;
-		height: 70px;
+		width: 28%;
+		height: 75px;
 		border: 0 0 0 0;
 		cursor: $pointer;
 
@@ -594,18 +665,38 @@
 		flex-shrink: 1;
 		flex-basis: auto;
 
-		text: {
-			align: $center;
-		}
-
 		font: {
 			size: 2em;
 			weight: 900;
 		}
+
+		border-radius: 9px 9px 9px 9px;
+		border-style: outset;
+
+		flex: 0 1 auto;
+		flex-grow: 0;
+		flex-shrink: 1;
+		flex-basis: auto;
+
+		text: {
+			align: $center;
+		}
+
+		list: {
+			style: none;
+		}
+
+		text: {
+			decoration: none;
+		}
+
+		line: {
+			height: 1.8;
+		}
 	}
 	
 	/* sass/lib-sass-mobile.scss - line 608 */
-	.#{$buttom}-white{
+	.#{$buttom}-padrao{
 		background: $branco;
 		color: $preto;
 		border-color: $branco;
@@ -624,7 +715,7 @@
 	}
 	
 	/* sass/lib-sass-mobile.scss - line 627 */
-	.#{$buttom}-danger{
+	.#{$buttom}-atencao{
 		background: $vermelho;
 		color: $preto;
 		border-color: $vermelho;

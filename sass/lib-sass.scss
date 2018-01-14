@@ -93,7 +93,16 @@ img:not([alt]){
 		border-color: $gelo-hover;
 		border-left: 9px solid $border-cinza;
 		border-right: 9px solid $border-cinza;
-		@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+		outline: 0;
+		box-shadow: 0 0 0 .2em rgba(242,242,245, 0.8);
+
+		list: {
+			style: none;
+		}
+
+		text: {
+			decoration: none;
+		}
 	}
 }
 
@@ -112,7 +121,16 @@ img:not([alt]){
 		border-color: $vermelho-hover;
 		border-left: 9px solid $border-vermelho;
 		border-right: 9px solid $border-vermelho;
-		@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+		outline: 0;
+		box-shadow: 0 0 0 .1em rgba(255,12,12, 0.4);
+
+		list: {
+			style: none;
+		}
+
+		text: {
+			decoration: none;
+		}
 	}
 }
 
@@ -131,7 +149,16 @@ img:not([alt]){
 		border-color: $verde-hover;
 		border-left: 9px solid $border-verde;
 		border-right: 9px solid $border-verde;
-		@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+		outline: 0;
+		box-shadow: 0 0 0 .1em rgba(0,196,12, 0.7);
+
+		list: {
+			style: none;
+		}
+
+		text: {
+			decoration: none;
+		}
 	}
 }
 
@@ -150,7 +177,16 @@ img:not([alt]){
 		border-color: $azul-hover;
 		border-left: 9px solid $border-azul;
 		border-right: 9px solid $border-azul;
-		@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+		outline: 0;
+		box-shadow: 0 0 0 .1em rgba(3,79,178, 0.7);
+
+		list: {
+			style: none;
+		}
+
+		text: {
+			decoration: none;
+		}
 	}
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "lib.sass",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Biblioteca em sass, desenvolvimento web!",
   "main": "index.js",
   "scripts": {
