@@ -1,3 +1,5 @@
 .DS_Store
 .sass-chache/*
 package-lock.json
+
+img/*

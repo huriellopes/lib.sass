@@ -51,6 +51,18 @@ Para instalar a lib, você deverá ter o npm instalado com a versão igual ou su
 
 >	"sass --watch node_module/lib.sass/sass:node_module/lib.sass/css --style expanded" <strong>(Lembrando que estilos de saída do sass: nested, expanded, compact, compressed)</strong>
 
+## O que tem na lib
+
+### Card's
+
+<img src="img/card.JPG" alt="Cards">
+<p style="text-align: center;">Card's</p>
+
+### Button's
+
+<img src="img/buttons.JPG" alt="Buttons">
+<p style="text-align: center;">Button's</p>
+
 ## LICENSE
 
 > MIT LICENSE , Todos os Direitos Reservados - Huriel Lopes
