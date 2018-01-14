@@ -59,7 +59,7 @@ Para instalar a lib, você deverá ter o npm instalado com a versão igual ou su
 
 ### Button's
 
-![Button](http://cdn.lopes.tech/buttons.JPG)
+![Button]()
 
 ## LICENSE
 
