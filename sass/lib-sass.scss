@@ -35,11 +35,9 @@ img:not([alt]){
 }
 
 .#{$buttom}{
-	width: 30%;
-	height: 35px;
-	
-	@include box-shadow(2px 2px 4px rgba(0,0,0,0.2));
-	
+	width: 15%;
+	height: 45px;
+	border: 0 0 0 0;
 	cursor: $pointer;
 
 	margin: {
@@ -55,26 +53,71 @@ img:not([alt]){
 	flex-grow: 0;
 	flex-shrink: 1;
 	flex-basis: auto;
+
+	text: {
+		align: $center;
+	}
 }
 
 .#{$buttom}-white{
 	background: $branco;
 	color: $preto;
+	border-color: $branco;
 
 	&:hover, &:focus {
-		color: $branco;
-		background: $verde;
+		color: $preto;
+		background: $gelo-hover;
+		border-radius: 0 9px 0 9px;
+		border-color: $gelo-hover;
+		@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
 	}
 }
 
 .#{$buttom}-danger{
 	background: $vermelho;
 	color: $preto;
+	border-color: $vermelho;
 
 	&:hover, &:focus {
 		color: $branco;
 		background: $vermelho-hover;
+		border-radius: 0 9px 0 9px;
+		border-color: $vermelho-hover;
+		@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
 	}
+}
+
+.#{$buttom}-sucesso{
+	background: $verde;
+	color: $preto;
+	border-color: $verde;
+
+	&:hover,&:focus {
+		color: $branco;
+		background: $verde-hover;
+		border-radius: 0 9px 0 9px;
+		border-color: $verde-hover;
+		@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+	}
+}
+
+.#{$buttom}-info {
+	background: $azul;
+	color: $preto;
+	border-color: $azul;
+
+	&:hover, &:focus {
+		color: $branco;
+		background: $azul-hover;
+		border-radius: 0 9px 0 9px;
+		border-color: $azul-hover;
+		@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+	}
+}
+
+.#{buttom}-block {
+	width: $width-padrao;
+	display: block;
 }
 
 /* 

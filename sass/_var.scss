@@ -32,12 +32,20 @@ $flex-stretch: stretch;
 
 // Colors
 $branco: #FFFFFF;
+$gelo-hover: #f2f2f2;
 $vermelho: #FF0000;
-$vermelho-hover: #ff1919;
-$azul: #428ff4;
+$vermelho-hover: #ff0c0c;
+$azul: #004196;
+$azul-hover: #034fb2;
 $amarelo: #f4c441;
-$verde: #41f446;
+$verde: #00af0b;
+$verde-hover: #00c40c;
 $preto: #000000;
+
+// buttom default
+$width-padrao: 100% !default;
+
+$block: block;
 
 $pointer: pointer;
 

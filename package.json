@@ -1,5 +1,5 @@
 {
-  "name": "library-sass",
+  "name": "lib.sass",
   "version": "1.0.0",
   "description": "> Biblioteca desenvolvida em Sass pré-processado em CSS, para ser reutilizado em projetos Web!",
   "main": "index.js",
@@ -8,13 +8,27 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/huriellopes/library-sass.git"
+    "url": "git+https://github.com/huriellopes/lib.sass.git"
   },
-  "keywords": [],
-  "author": "Huriel Lopes",
-  "license": "ISC",
+  "keywords": [
+    "css",
+    "libsass",
+    "preprocessador",
+    "sass",
+    "scss",
+    "style"
+  ],
+  "author": {
+    "Nome": "Huriel Lopes",
+    "email": "huriellopes1996@gmail.com",
+    "url": "https://huriellopes.github.io"
+  },
+  "engines":{
+    "node": ">=5.0.0"
+  },
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/huriellopes/library-sass/issues"
+    "url": "https://github.com/huriellopes/lib.sass/issues"
   },
-  "homepage": "https://github.com/huriellopes/library-sass#readme"
+  "homepage": "https://github.com/huriellopes/lib.sass#readme"
 }
