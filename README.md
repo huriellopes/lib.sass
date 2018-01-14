@@ -55,13 +55,11 @@ Para instalar a lib, você deverá ter o npm instalado com a versão igual ou su
 
 ### Card's
 
-<img src="img/card.JPG" alt="Cards">
-<p style="text-align: center;">Card's</p>
+![Card](https://drive.google.com/file/d/1esN3ejOqo2vPRUpTjNfRl8ZCXoZaJrcQ/view)
 
 ### Button's
 
-<img src="img/buttons.JPG" alt="Buttons">
-<p style="text-align: center;">Button's</p>
+![Button](https://drive.google.com/file/d/1k8suzEpbExavzXIvyVQ0qgdHncdN8JZo/view)
 
 ## LICENSE
 
