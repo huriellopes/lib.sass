@@ -51,7 +51,7 @@ Para instalar a lib, você deverá ter o npm instalado com a versão igual ou su
 
 >	"sass --watch node_module/lib.sass/sass:node_module/lib.sass/css --style expanded" <strong>(Lembrando que estilos de saída do sass: nested, expanded, compact, compressed)</strong>
 
-## O que tem na lib
+## O que tem na lib?
 
 ### Card's
 
