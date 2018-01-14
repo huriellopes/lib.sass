@@ -27,43 +27,29 @@ Para instalar a lib, você deverá ter o npm instalado com a versão igual ou su
 
 > Para compilar o sass, caso necessite fazer alguma alteração na lib, se for windows e linux deverá ter o ruby instalado, se for Mac não irá precisar instalar o ruby! Lembrando que deverá ter instalado também o Sass!
 
-<ul>
-	<li>Para instalar o ruby no Windows, acessar o link abaixo: </li>
+1 - Para instalar o ruby no Windows, acessar o link abaixo: 
 	
-	<ol>
-		<li>[Ruby](https://www.ruby-lang.org/pt/downloads/)</li>
-	</ol>
+>	[Ruby](https://www.ruby-lang.org/pt/downloads/)
+
+2 - Para instalar o sass no windows, execute o seguinte comando no CMD ou no git bash:
+
+>	gem install sass
+
+3 - Para instalar o ruby no Linux, execute o seguinte comando no terminal:
 	
-	<li>Para instalar o ruby no Linux, execute o seguinte comando no terminal: </li>
-	
-	<ol>
-		<li>sudo apt-get install ruby-full</li>
-	</ol>
-	
-	<li>Para instalar o sass no windows, execute o seguinte comando no CMD ou no git bash: </li>
-	
-	<ol>
-		<li>gem install sass</li>
-	</ol>
+>	sudo apt-get install ruby-full
 
-	<li>Para Instalar o sass no linux, execute o seguinte comando no terminal: </li>
+4 - Para Instalar o sass no linux, execute o seguinte comando no terminal: 
 
-	<ol>
- 		<li>sudo su -c "gem install sass"</li>
-	</ol>
+>	sudo su -c "gem install sass"
 
-	<li>Para instalar o Sass no Mac, execute o seguinte comando no terminal: </li>
+5 - Para instalar o Sass no Mac, execute o seguinte comando no terminal: 
 
-	<ol>
-		<li>"gem install sass"</li>
-	</ol>
+>	"gem install sass"
 
-	<li>Depois de Instalado o ruby e o sass, caso precise modificar algo na lib, no CMD deverá acessar a pasta do projeto e executar o seguinte comando: </li>
+6 - Depois de Instalado o ruby e o sass, caso precise modificar algo na lib, no CMD deverá acessar a pasta do projeto e executar o seguinte comando: 
 
-	<ol>
-		<li>"sass --watch node_module/lib.sass/sass:node_module/lib.sass/css --style expanded" <strong>(Lembrando que estilos de saída do sass: nested, expanded, compact, compressed)</strong></li>
-	</ol>
-</ul>
+>	"sass --watch node_module/lib.sass/sass:node_module/lib.sass/css --style expanded" <strong>(Lembrando que estilos de saída do sass: nested, expanded, compact, compressed)</strong>
 
 ## LICENSE
 
