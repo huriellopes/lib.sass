@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
-/* sass/style.scss - line  */
+/* sass/lib-sass.scss - line 7 */
 *, body {
   font-family: "Lato", sans-serif;
   font-size: 20px;
@@ -15,7 +15,7 @@
 }
 
 /* 
-sass/style.scss - line  
+sass/lib-sass.scss - line 21
 Parágrafo
 */
 p {
@@ -24,7 +24,7 @@ p {
 }
 
 /* 
-sass/style.scss - line 
+sass/lib-sass.scss - line 32
 Estilo para não esquecer de colocar o Alt na Imagem  - Lembre do ALT 
 */
 img[alt=""],
@@ -32,6 +32,7 @@ img:not([alt]) {
   border: 3px dashed #FF0000;
 }
 
+/* sass/lib-sass.scss - line 38 */
 .buttom {
   width: 15%;
   height: 45px;
@@ -41,7 +42,7 @@ img:not([alt]) {
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 5%;
-  border-radius: 9px 0 9px 0;
+  border-radius: 9px 9px 9px 9px;
   flex: 0 1 auto;
   flex-grow: 0;
   flex-shrink: 1;
@@ -49,73 +50,98 @@ img:not([alt]) {
   text-align: center;
 }
 
+/* sass/lib-sass.scss - line 64 and 71 */
 .buttom-white {
   background: #FFFFFF;
   color: #000000;
   border-color: #FFFFFF;
+  border-left: 9px solid #ced4da;
+  border-right: 9px solid #ced4da;
 }
 .buttom-white:hover, .buttom-white:focus {
   color: #000000;
   background: #f2f2f2;
-  border-radius: 0 9px 0 9px;
+  border-radius: 9px 9px 9px 9px;
   border-color: #f2f2f2;
+  border-left: 9px solid #ced4da;
+  border-right: 9px solid #ced4da;
   -webkit-box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* sass/lib-sass.scss - line 83 and 90*/
 .buttom-danger {
   background: #FF0000;
   color: #000000;
   border-color: #FF0000;
+  border-left: 9px solid #c40000;
+  border-right: 9px solid #c40000;
 }
 .buttom-danger:hover, .buttom-danger:focus {
-  color: #FFFFFF;
+  color: #000000;
   background: #ff0c0c;
-  border-radius: 0 9px 0 9px;
+  border-radius: 9px 9px 9px 9px;
   border-color: #ff0c0c;
+  border-left: 9px solid #c40000;
+  border-right: 9px solid #c40000;
   -webkit-box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* sass/lib-sass.scss - line 102 and 109 */
 .buttom-sucesso {
   background: #00af0b;
   color: #000000;
   border-color: #00af0b;
+  border-left: 9px solid #007507;
+  border-right: 9px solid #007507;
 }
 .buttom-sucesso:hover, .buttom-sucesso:focus {
-  color: #FFFFFF;
+  color: #000000;
   background: #00c40c;
-  border-radius: 0 9px 0 9px;
+  border-radius: 9px 9px 9px 9px;
   border-color: #00c40c;
+  border-left: 9px solid #007507;
+  border-right: 9px solid #007507;
   -webkit-box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* sass/lib-sass.scss - line 121 and 128 */
 .buttom-info {
-  background: #004196;
+  background: #007bff;
   color: #000000;
-  border-color: #004196;
+  border-color: #007bff;
+  border-left: 9px solid #002656;
+  border-right: 9px solid #002656;
 }
 .buttom-info:hover, .buttom-info:focus {
-  color: #FFFFFF;
+  color: #000000;
   background: #034fb2;
-  border-radius: 0 9px 0 9px;
+  border-radius: 9px 9px 9px 9px;
   border-color: #034fb2;
+  border-left: 9px solid #002656;
+  border-right: 9px solid #002656;
   -webkit-box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* sass/lib-sass.scss - line 139 */
 .buttom-block {
   width: 100%;
   display: block;
 }
 
+.buttom-center {
+  margin: 0 auto 0 auto;
+}
+
 /* 
-sass/style.scss - line 
+sass/lib-sass.scss - line 153
 Container
 */
 .content {
@@ -132,7 +158,7 @@ Container
 }
 
 /* 
-sass/style.scss - line 
+sass/lib-sass.scss - line 170
 Card 
 */
 .card {
@@ -150,7 +176,7 @@ Card
 }
 
 /* 
-sass/style.scss - line 
+sass/lib-sass.scss - line 186
 Card Hover e Focus 
 */
 .card:hover, .card:focus {
@@ -160,7 +186,7 @@ Card Hover e Focus
 }
 
 /* 
-sass/style.scss - line 
+sass/lib-sass.scss - line 196
 Card-IMG 
 */
 .card-img {
@@ -172,7 +198,7 @@ Card-IMG
 }
 
 /* 
-sass/style.scss - line 
+sass/lib-sass.scss - line 207
 Card-title 
 */
 .card-title {
@@ -184,7 +210,7 @@ Card-title
 }
 
 /*
-sass/style.scss - line 
+sass/lib-sass.scss - line 227
 Card-Subtitle
 */
 .card-subtitle {
@@ -197,7 +223,7 @@ Card-Subtitle
 }
 
 /* 
-sass/style.scss - line 
+sass/lib-sass.scss - line 249
 Card-text 
 */
 .card-text {

@@ -3,7 +3,7 @@
 
 // comando pra compilar o sass: sass --watch sass:css --style expanded
 
-/* sass/style.scss - line  */
+/* sass/lib-sass.scss - line 7 */
 *,body{
 	font: {
 		family: $lato; // $lato, $roboto, $opensans
@@ -15,7 +15,7 @@
 }
 
 /* 
-sass/style.scss - line  
+sass/lib-sass.scss - line 21
 Parágrafo
 */
 p{
@@ -26,7 +26,7 @@ p{
 }
 
 /* 
-sass/style.scss - line 
+sass/lib-sass.scss - line 32
 Estilo para não esquecer de colocar o Alt na Imagem  - Lembre do ALT 
 */
 img[alt=""],
@@ -34,6 +34,7 @@ img:not([alt]){
 	border: 3px dashed #FF0000;
 }
 
+/* sass/lib-sass.scss - line 38 */
 .#{$buttom}{
 	width: 15%;
 	height: 45px;
@@ -47,7 +48,7 @@ img:not([alt]){
 		bottom: 5%;
 	}
 	
-	border-radius: 9px 0 9px 0;
+	border-radius: 9px 9px 9px 9px;
 
 	flex: 0 1 auto;
 	flex-grow: 0;
@@ -59,69 +60,94 @@ img:not([alt]){
 	}
 }
 
+/* sass/lib-sass.scss - line 64 and 71 */
 .#{$buttom}-white{
 	background: $branco;
 	color: $preto;
 	border-color: $branco;
-
+	border-left: 9px solid $border-cinza;
+	border-right: 9px solid $border-cinza;
+	
 	&:hover, &:focus {
 		color: $preto;
 		background: $gelo-hover;
-		border-radius: 0 9px 0 9px;
+		border-radius: 9px 9px 9px 9px;
 		border-color: $gelo-hover;
+		border-left: 9px solid $border-cinza;
+		border-right: 9px solid $border-cinza;
 		@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
 	}
 }
 
+/* sass/lib-sass.scss - line 83 and 90*/
 .#{$buttom}-danger{
 	background: $vermelho;
 	color: $preto;
 	border-color: $vermelho;
-
+	border-left: 9px solid $border-vermelho;
+	border-right: 9px solid $border-vermelho;
+	
 	&:hover, &:focus {
-		color: $branco;
+		color: $preto;
 		background: $vermelho-hover;
-		border-radius: 0 9px 0 9px;
+		border-radius: 9px 9px 9px 9px;
 		border-color: $vermelho-hover;
+		border-left: 9px solid $border-vermelho;
+		border-right: 9px solid $border-vermelho;
 		@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
 	}
 }
 
+/* sass/lib-sass.scss - line 102 and 109 */
 .#{$buttom}-sucesso{
 	background: $verde;
 	color: $preto;
 	border-color: $verde;
-
+	border-left: 9px solid $border-verde;
+	border-right: 9px solid $border-verde;
+	
 	&:hover,&:focus {
-		color: $branco;
+		color: $preto;
 		background: $verde-hover;
-		border-radius: 0 9px 0 9px;
+		border-radius: 9px 9px 9px 9px;
 		border-color: $verde-hover;
+		border-left: 9px solid $border-verde;
+		border-right: 9px solid $border-verde;
 		@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
 	}
 }
 
+/* sass/lib-sass.scss - line 121 and 128 */
 .#{$buttom}-info {
 	background: $azul;
 	color: $preto;
 	border-color: $azul;
-
+	border-left: 9px solid $border-azul;
+	border-right: 9px solid $border-azul;
+	
 	&:hover, &:focus {
-		color: $branco;
+		color: $preto;
 		background: $azul-hover;
-		border-radius: 0 9px 0 9px;
+		border-radius: 9px 9px 9px 9px;
 		border-color: $azul-hover;
+		border-left: 9px solid $border-azul;
+		border-right: 9px solid $border-azul;
 		@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
 	}
 }
 
+/* sass/lib-sass.scss - line 139 */
 .#{buttom}-block {
 	width: $width-padrao;
-	display: block;
+	display: $block;
+}
+
+.#{buttom}-center {	
+	margin: 0 auto 0 auto;
 }
 
 /* 
-sass/style.scss - line 
+sass/lib-sass.scss - line 153
 Container
 */
 .#{$content}{
@@ -138,7 +164,7 @@ Container
 }
 
 /* 
-sass/style.scss - line 
+sass/lib-sass.scss - line 170
 Card 
 */
 .#{$card}{
@@ -154,7 +180,7 @@ Card
 }
 
 /* 
-sass/style.scss - line 
+sass/lib-sass.scss - line 186
 Card Hover e Focus 
 */
 .#{$card}{
@@ -164,7 +190,7 @@ Card Hover e Focus
 }
 
 /* 
-sass/style.scss - line 
+sass/lib-sass.scss - line 196
 Card-IMG 
 */
 .#{$card}-img{
@@ -175,7 +201,7 @@ Card-IMG
 }
 
 /* 
-sass/style.scss - line 
+sass/lib-sass.scss - line 207
 Card-title 
 */
 .#{$card}-title{
@@ -195,7 +221,7 @@ Card-title
 }
 
 /*
-sass/style.scss - line 
+sass/lib-sass.scss - line 227
 Card-Subtitle
 */
 .#{$card}-subtitle{
@@ -217,7 +243,7 @@ Card-Subtitle
 }
 
 /* 
-sass/style.scss - line 
+sass/lib-sass.scss - line 249
 Card-text 
 */
 .#{$card}-text{

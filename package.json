@@ -1,6 +1,6 @@
 {
   "name": "lib.sass",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "> Biblioteca desenvolvida em Sass pré-processado em CSS, para ser reutilizado em projetos Web!",
   "main": "index.js",
   "scripts": {

@@ -2,7 +2,7 @@
 @import '_mixins.scss';
 
 @media screen and (min-width: 600px) and (max-width: 900px){
-	/* sass/style.scss - line  */
+	/* sass/lib-sass-mobile.scss - line 6 */
 	*,body{
 		font: {
 			family: $lato; // $lato, $roboto, $opensans
@@ -14,7 +14,7 @@
 	}
 
 	/* 
-	sass/style.scss - line  
+	sass/lib-sass-mobile.scss - line  18
 	Parágrafo
 	*/
 	p{
@@ -25,7 +25,7 @@
 	}
 
 	/* 
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 31
 	Estilo para não esquecer de colocar o Alt na Imagem  - Lembre do ALT 
 	*/
 	img[alt=""],
@@ -34,7 +34,7 @@
 	}
 
 	/* 
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 40
 	Container
 	*/
 	.#{$content}{
@@ -48,9 +48,117 @@
 		align-items: flex-start;
 		margin: 5%;
 	}
+	
+	/* sass/lib-sass-mobile.scss - line 53 */
+	.#{$buttom}{
+		width: 15%;
+		height: 45px;
+		border: 0 0 0 0;
+		cursor: $pointer;
+
+		margin: {
+			top: 2%;
+			left: 5%;
+			right: 5%;
+			bottom: 5%;
+		}
+	
+		border-radius: 9px 9px 9px 9px;
+
+		flex: 0 1 auto;
+		flex-grow: 0;
+		flex-shrink: 1;
+		flex-basis: auto;
+
+		text: {
+			align: $center;
+		}
+	}
+	
+	/* sass/lib-sass-mobile.scss - line 79 */
+	.#{$buttom}-white{
+		background: $branco;
+		color: $preto;
+		border-color: $branco;
+		border-left: 9px solid $border-cinza;
+		border-right: 9px solid $border-cinza;
+
+		&:hover, &:focus {
+			color: $preto;
+			background: $gelo-hover;
+			border-radius: 9px 9px 9px 9px;
+			border-color: $gelo-hover;
+			border-left: 9px solid $border-cinza;
+			border-right: 9px solid $border-cinza;
+			@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+		}
+	}
+	
+	/* sass/lib-sass-mobile.scss - line 98 */
+	.#{$buttom}-danger{
+		background: $vermelho;
+		color: $preto;
+		border-color: $vermelho;
+		border-left: 9px solid $border-vermelho;
+		border-right: 9px solid $border-vermelho;
+
+		&:hover, &:focus {
+			color: $preto;
+			background: $vermelho-hover;
+			border-radius: 9px 9px 9px 9px;
+			border-color: $vermelho-hover;
+			border-left: 9px solid $border-vermelho;
+			border-right: 9px solid $border-vermelho;
+			@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+		}
+	}
+	
+	/* sass/lib-sass-mobile.scss - line 117 */
+	.#{$buttom}-sucesso{
+		background: $verde;
+		color: $preto;
+		border-color: $verde;
+		border-left: 9px solid $border-verde;
+		border-right: 9px solid $border-verde;
+
+		&:hover,&:focus {
+			color: $preto;
+			background: $verde-hover;
+			border-radius: 9px 9px 9px 9px;
+			border-color: $verde-hover;
+			border-left: 9px solid $border-verde;
+			border-right: 9px solid $border-verde;
+			@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+		}
+	}
+	
+	/* sass/lib-sass-mobile.scss - line 136 */
+	.#{$buttom}-info {
+		background: $azul;
+		color: $preto;
+		border-color: $azul;
+		border-left: 9px solid $border-azul;
+		border-right: 9px solid $border-azul;
+
+		&:hover, &:focus {
+			color: $preto;
+			background: $azul-hover;
+			border-radius: 9px 9px 9px 9px;
+			border-color: $azul-hover;
+			border-left: 9px solid $border-azul;
+			border-right: 9px solid $border-azul;
+			@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+		}
+	}
+	
+	/* sass/lib-sass-mobile.scss - line 155 */
+	.#{buttom}-block {
+		width: $width-padrao;
+		display: block;
+	}
 
 	/* 
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 164
 	Card 
 	*/
 	.#{$card}{
@@ -65,7 +173,7 @@
 	}
 
 	/* 
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 179
 	Card Hover e Focus 
 	*/
 	.#{$card}{
@@ -75,7 +183,7 @@
 	}
 
 	/* 
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 189
 	Card-IMG 
 	*/
 	.#{$card}-img{
@@ -85,7 +193,7 @@
 	}
 
 	/* 
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 199
 	Card-title 
 	*/
 	.#{$card}-title{
@@ -105,7 +213,7 @@
 	}
 
 	/*
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 219
 	Card-Subtitle
 	*/
 	.#{$card}-subtitle{
@@ -127,7 +235,7 @@
 	}
 
 	/* 
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 241
 	Card-text 
 	*/
 	.#{$card}-text{
@@ -150,7 +258,7 @@
 }
 
 @media screen and (max-device-width: 320px){
-	/* sass/style.scss - line  */
+	/* sass/lib-sass-mobile.scss - line  262*/
 	*,body{
 		font: {
 			family: $lato; // $lato, $roboto, $opensans
@@ -162,7 +270,7 @@
 	}
 
 	/* 
-	sass/style.scss - line  
+	sass/lib-sass-mobile.scss - line 277
 	Parágrafo
 	*/
 	p{
@@ -173,7 +281,7 @@
 	}
 
 	/* 
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 287
 	Estilo para não esquecer de colocar o Alt na Imagem  - Lembre do ALT 
 	*/
 	img[alt=""],
@@ -182,7 +290,7 @@
 	}
 
 	/* 
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 296
 	Container
 	*/
 	.#{$content}{
@@ -196,9 +304,123 @@
 		align-items: flex-start;
 		margin: 2%;
 	}
+	
+	/* sass/lib-sass-mobile.scss - line 309 */
+	.#{$buttom}{
+		width: 15%;
+		height: 45px;
+		border: 0 0 0 0;
+		cursor: $pointer;
+
+		margin: {
+			top: 2%;
+			left: 5%;
+			right: 5%;
+			bottom: 5%;
+		}
+	
+		border-radius: 9px 9px 9px 9px;
+
+		flex: 0 1 auto;
+		flex-grow: 0;
+		flex-shrink: 1;
+		flex-basis: auto;
+
+		text: {
+			align: $center;
+		}
+	}
+	
+	/* sass/lib-sass-mobile.scss - line 335 */
+	.#{$buttom}-white{
+		background: $branco;
+		color: $preto;
+		border-color: $branco;
+		border-left: 9px solid $border-cinza;
+		border-right: 9px solid $border-cinza;
+
+		&:hover, &:focus {
+			color: $preto;
+			background: $gelo-hover;
+			border-radius: 9px 9px 9px 9px;
+			border-color: $gelo-hover;
+			border-left: 9px solid $border-cinza;
+			border-right: 9px solid $border-cinza;
+			@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+		}
+	}
+	
+	/* sass/lib-sass-mobile.scss - line 354 */
+	.#{$buttom}-danger{
+		background: $vermelho;
+		color: $preto;
+		border-color: $vermelho;
+		border-left: 9px solid $border-vermelho;
+		border-right: 9px solid $border-vermelho;
+
+		&:hover, &:focus {
+			color: $preto;
+			background: $vermelho-hover;
+			border-radius: 9px 9px 9px 9px;
+			border-color: $vermelho-hover;
+			border-left: 9px solid $border-vermelho;
+			border-right: 9px solid $border-vermelho;
+			@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+		}
+	}
+	
+	/* sass/lib-sass-mobile.scss - line 373 */
+	.#{$buttom}-sucesso{
+		background: $verde;
+		color: $preto;
+		border-color: $verde;
+		border-left: 9px solid $border-verde;
+		border-right: 9px solid $border-verde;
+
+		&:hover,&:focus {
+			color: $preto;
+			background: $verde-hover;
+			border-radius: 9px 9px 9px 9px;
+			border-color: $verde-hover;
+			border-left: 9px solid $border-verde;
+			border-right: 9px solid $border-verde;
+			@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+		}
+	}
+	
+	/* sass/lib-sass-mobile.scss - line 392 */
+	.#{$buttom}-info {
+		background: $azul;
+		color: $preto;
+		border-color: $azul;
+		border-left: 9px solid $border-azul;
+		border-right: 9px solid $border-azul;
+
+		&:hover, &:focus {
+			color: $preto;
+			background: $azul-hover;
+			border-radius: 9px 9px 9px 9px;
+			border-color: $azul-hover;
+			border-left: 9px solid $border-azul;
+			border-right: 9px solid $border-azul;
+			@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+		}
+	}
+	
+	/* sass/lib-sass-mobile.scss - line 411 */
+	.#{buttom}-block {
+		width: $width-padrao;
+		height: 50px;
+		display: block;
+	}
+	
+	/* sass/lib-sass-mobile.scss - line 417 */
+	.#{buttom}-center {	
+		margin: 0 auto 0 auto;
+	}
 
 	/* 
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 426
 	Card 
 	*/
 	.#{$card}{
@@ -215,7 +437,7 @@
 	}
 
 	/* 
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 440
 	Card Hover e Focus 
 	*/
 	.#{$card}{
@@ -225,7 +447,7 @@
 	}
 
 	/* 
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 453
 	Card-IMG 
 	*/
 	.#{$card}-img{
@@ -235,7 +457,7 @@
 	}
 
 	/* 
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 463
 	Card-title 
 	*/
 	.#{$card}-title{
@@ -255,7 +477,7 @@
 	}
 
 	/*
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 483
 	Card-Subtitle
 	*/
 	.#{$card}-subtitle{
@@ -277,7 +499,7 @@
 	}
 
 	/* 
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 505
 	Card-text 
 	*/
 	.#{$card}-text{
@@ -300,7 +522,7 @@
 }
 
 @media screen and (max-device-width: 425px) {
-	/* sass/style.scss - line  */
+	/* sass/lib-sass-mobile.scss - line 526 */
 	*,body{
 		font: {
 			family: $lato; // $lato, $roboto, $opensans
@@ -312,7 +534,7 @@
 	}
 
 	/* 
-	sass/style.scss - line  
+	sass/lib-sass-mobile.scss - line 540 
 	Parágrafo
 	*/
 	p{
@@ -323,7 +545,7 @@
 	}
 
 	/* 
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 551
 	Estilo para não esquecer de colocar o Alt na Imagem  - Lembre do ALT 
 	*/
 	img[alt=""],
@@ -332,7 +554,7 @@
 	}
 
 	/* 
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 560
 	Container
 	*/
 	.#{$content}{
@@ -350,9 +572,128 @@
 			bottom: 4%;
 		}
 	}
+	
+	/* sass/lib-sass-mobile.scss - line 577 */
+	.#{$buttom}{
+		width: 15%;
+		height: 70px;
+		border: 0 0 0 0;
+		cursor: $pointer;
+
+		margin: {
+			top: 2%;
+			left: 5%;
+			right: 5%;
+			bottom: 5%;
+		}
+	
+		border-radius: 9px 9px 9px 9px;
+
+		flex: 0 1 auto;
+		flex-grow: 0;
+		flex-shrink: 1;
+		flex-basis: auto;
+
+		text: {
+			align: $center;
+		}
+
+		font: {
+			size: 2em;
+			weight: 900;
+		}
+	}
+	
+	/* sass/lib-sass-mobile.scss - line 608 */
+	.#{$buttom}-white{
+		background: $branco;
+		color: $preto;
+		border-color: $branco;
+		border-left: 9px solid $border-cinza;
+		border-right: 9px solid $border-cinza;
+
+		&:hover, &:focus {
+			color: $preto;
+			background: $gelo-hover;
+			border-radius: 9px 9px 9px 9px;
+			border-color: $gelo-hover;
+			border-left: 9px solid $border-cinza;
+			border-right: 9px solid $border-cinza;
+			@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+		}
+	}
+	
+	/* sass/lib-sass-mobile.scss - line 627 */
+	.#{$buttom}-danger{
+		background: $vermelho;
+		color: $preto;
+		border-color: $vermelho;
+		border-left: 9px solid $border-vermelho;
+		border-right: 9px solid $border-vermelho;
+
+		&:hover, &:focus {
+			color: $preto;
+			background: $vermelho-hover;
+			border-radius: 9px 9px 9px 9px;
+			border-color: $vermelho-hover;
+			border-left: 9px solid $border-vermelho;
+			border-right: 9px solid $border-vermelho;
+			@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+		}
+	}
+	
+	/* sass/lib-sass-mobile.scss - line 646 */
+	.#{$buttom}-sucesso{
+		background: $verde;
+		color: $preto;
+		border-color: $verde;
+		border-left: 9px solid $border-verde;
+		border-right: 9px solid $border-verde;
+
+		&:hover,&:focus {
+			color: $preto;
+			background: $verde-hover;
+			border-radius: 9px 9px 9px 9px;
+			border-color: $verde-hover;
+			border-left: 9px solid $border-verde;
+			border-right: 9px solid $border-verde;
+			@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+		}
+	}
+	
+	/* sass/lib-sass-mobile.scss - line 665 */
+	.#{$buttom}-info {
+		background: $azul;
+		color: $preto;
+		border-color: $azul;
+		border-left: 9px solid $border-azul;
+		border-right: 9px solid $border-azul;
+
+		&:hover, &:focus {
+			color: $preto;
+			background: $azul-hover;
+			border-radius: 9px 9px 9px 9px;
+			border-color: $azul-hover;
+			border-left: 9px solid $border-azul;
+			border-right: 9px solid $border-azul;
+			@include box-shadow(5px 6px 4px rgba(0,0,0,0.2));
+		}
+	}
+	
+	/* sass/lib-sass-mobile.scss - line 684 */
+	.#{buttom}-block {
+		width: $width-padrao;
+		height: 90px;
+		display: block;
+	}
+	
+	/* sass/lib-sass-mobile.scss - line 691 */
+	.#{buttom}-center {	
+		margin: 0 auto 0 auto;
+	}
 
 	/* 
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 699
 	Card 
 	*/
 	.#{$card}{
@@ -368,7 +709,7 @@
 	}
 
 	/* 
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 715
 	Card Hover e Focus 
 	*/
 	.#{$card}{
@@ -378,7 +719,7 @@
 	}
 
 	/* 
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 725
 	Card-IMG 
 	*/
 	.#{$card}-img{
@@ -388,7 +729,7 @@
 	}
 
 	/* 
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 735
 	Card-title 
 	*/
 	.#{$card}-title{
@@ -408,7 +749,7 @@
 	}
 
 	/*
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 755
 	Card-Subtitle
 	*/
 	.#{$card}-subtitle{
@@ -430,7 +771,7 @@
 	}
 
 	/* 
-	sass/style.scss - line 
+	sass/lib-sass-mobile.scss - line 777
 	Card-text 
 	*/
 	.#{$card}-text{

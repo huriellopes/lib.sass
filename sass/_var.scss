@@ -1,46 +1,50 @@
 @import '_font.scss';
 
 // Fontes
-$lato: 'Lato', sans-serif; // espessura: 400,700,900
-$roboto: 'Roboto', sans-serif; // espessura: 400,500,700,900
-$opensans: 'Open Sans', sans-serif; // espessura: 400,600,700,800
+$lato: 'Lato', sans-serif !default; // espessura: 400,700,900
+$roboto: 'Roboto', sans-serif !default; // espessura: 400,500,700,900
+$opensans: 'Open Sans', sans-serif !default; // espessura: 400,600,700,800
 
 // Tamanhos de Fontes
-$size-padrao: 20px;
-$size-em: 1.25em;
-$center: center;
-$justify: justify;
+$size-padrao: 20px !default;
+$size-em: 1.25em !default;
+$center: center !default;
+$justify: justify !default;
 
 
 // Variaveis de Card
-$card: card;
-$color-subtitle-card: #969696;
-$card-padrao: #000000;
-$card-hover: #FF0000; 
+$card: card !default;
+$color-subtitle-card: #969696 !default;
+$card-padrao: #000000 !default;
+$card-hover: #FF0000 !default; 
 
 // Classes
-$content: content;
-$buttom: buttom;
+$content: content !default;
+$buttom: buttom !default;
 
 // flex
 $flex: flex;
-$flex-center: center;
-$flex-start: flex-start;
-$flex-end: flex-end;
-$flex-baseline: baseline;
-$flex-stretch: stretch;
+$flex-center: center !default;
+$flex-start: flex-start !default;
+$flex-end: flex-end !default;
+$flex-baseline: baseline !default;
+$flex-stretch: stretch !default;
 
 // Colors
-$branco: #FFFFFF;
-$gelo-hover: #f2f2f2;
-$vermelho: #FF0000;
-$vermelho-hover: #ff0c0c;
-$azul: #004196;
-$azul-hover: #034fb2;
-$amarelo: #f4c441;
-$verde: #00af0b;
-$verde-hover: #00c40c;
-$preto: #000000;
+$branco: #FFFFFF !default;
+$gelo-hover: #f2f2f2 !default;
+$border-cinza: #ced4da !default;
+$vermelho: #FF0000 !default;
+$vermelho-hover: #ff0c0c !default;
+$border-vermelho: #c40000 !default;
+$azul: #007bff !default !default;
+$azul-hover: #034fb2 !default;
+$border-azul: #002656 !default;
+$amarelo: #f4c441 !default;
+$verde: #00af0b !default;
+$verde-hover: #00c40c !default;
+$border-verde: #007507 !default;
+$preto: #000000 !default;
 
 // buttom default
 $width-padrao: 100% !default;
